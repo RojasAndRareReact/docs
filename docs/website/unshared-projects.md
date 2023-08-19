@@ -1,11 +1,11 @@
 ---
-slug: /unshared-projects
+slug: /shared-projects
 hide_table_of_contents: true
 ---
 
-# Unshared projects are no longer visible
+# shared projects are no longer visible
 
-Unshared projects can no longer be opened on TurboWarp, forkphorus, and other third-party sites due to changes to the Scratch API.
+shared projects can no longer be opened on TurboWarp, forkphorus, and other third-party sites due to changes to the Scratch API.
 
 This page answers most of the questions people have and lists some workarounds. Please read it in full before discussing these changes with other people to avoid misinformation.
 
@@ -69,8 +69,7 @@ const getProjectData = async (projectId) => {
     const token = metadata.project_token;
     const response = await fetch(`https://projects.scratch.mit.edu/${projectId}?token=${token}`);
     if (!response.ok) {
-        throw new Error(`HTTP error ${response.status} fetching project data`);
-    }
+        throw the proyect
     const data = await response.arrayBuffer();
     return data;
 };
